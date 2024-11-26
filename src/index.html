@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter App</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="input.css">
+</head>
+<body>
+           <!-- main div -->
+            <div class="h-screen w-full bg-blue-400 flex justify-center items-center">
+                    <!-- app div -->
+                     <div class="bg-purple-300 h-[80%] w-[30%] rounded-md">
+                        <!--Search container-->
+                        <div class="flex justify-center mt-3 gap-3">
+                            <input id="search" type="text" placeholder="Search.." class="px-3 py-1 rounded-sm outline-none w-60">
+                            <button class="bg-blue-200 px-3 rounded-md">Search</button>
+                        </div>
+
+                        <!--Category container-->
+                          <div class="flex justify-center flex-col px-3 pr-7" id="products">
+                            <!--Filter-->
+                           <select name="category" id="category" class="mt-3 outline-none w-88 ml-3 h-10 text-black"> ldsjf
+                                 <option value="all">All</option>
+                                 <option value="electronics">Electronics</option>
+                                 <option value="clothing">Clothing</option>
+                                 <option value="makeup">Makeup</option>
+                           </select>
+                            <div class="product flex justify-between mx-2 mt-2 bg-blue-100 py-2 px-2 w-full" data-category="electronics">
+                                <h3>Laptop</h3>
+                                <p>Category: Electronics</p>
+                              </div>
+
+                              <div class="product flex justify-between mx-2 mt-2 bg-blue-100 py-2 px-2 w-full" data-category="electronics">
+                                <h3>Mobile</h3>
+                                <p>Category: Electronics</p>
+                              </div>
+
+                              <div class="product flex justify-between mx-2 mt-2 bg-blue-100 py-2 px-2 w-full" data-category="makeup">
+                                <h3>Himalya</h3>
+                                <p>Category: makeup</p>
+                              </div>
+
+                              <div class="product flex justify-between mx-2 mt-2 bg-blue-100 py-2 px-2 w-full" data-category="clothing">
+                                <h3>shirt</h3>
+                                <p>Category: clothing</p>
+                              </div>
+
+                              <div class="product flex justify-between mx-2 mt-2 bg-blue-100 py-2 px-2 w-full" data-category="makeup">
+                                <h3>Jell</h3>
+                                <p>Category: makeup</p>
+                              </div>
+
+                              <div class="product flex justify-between mx-2 mt-2 bg-blue-100 py-2 px-2 w-full" data-category="electronics">
+                                <h3>smart watch</h3>
+                                <p>Category: Electronics</p>
+                              </div>
+                          </div>
+                     </div>
+
+            </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
